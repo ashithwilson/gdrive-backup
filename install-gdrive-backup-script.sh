@@ -13,7 +13,12 @@ fi
 
 dry_run_gdrive()
 {
+echo "Test running first Gdrive transaction
+"
 /sbin/gdrive list
+echo "
+
+"
 }
 
 configure_sync_folder()

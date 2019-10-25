@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 install_gdrive_binary()
@@ -35,22 +34,21 @@ print_summary()
 {
 touch /gdrive-backups/mysql_backup_list.txt
 touch /gdrive-backups/backup-list.txt
-echo '
+echo "
 
 ============
 ============
 Backup script is installed at /gdrive-backups/backup.sh
-Check gdrive details using command "gdrive help"
+Check gdrive details using command 'gdrive help'
 Website files - backup list : /gdrive-backups/backup-list.txt
 Db - backup list: /gdrive-backups/backup-list.txt
 ============
 
 ** Do not forget to set up daily/weekly cron for backups **
-
-'
+"
 }
 
-
+echo ""
 read -p "Are you sure to install gdrive backups? [Y/n]: " opt
 if [ "$opt" == "Y" ] || [ "$opt" == "y" ]; then
 install_gdrive_binary

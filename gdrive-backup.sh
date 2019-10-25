@@ -2,10 +2,10 @@
 
 # Using gdrive binary to upload to Google drive from https://github.com/gdrive-org/gdrive
 
-local_backup_dir=/backup/gdrive-backups
+local_backup_dir=/gdrive-backups
 gdrive_backup_dir=REPLACE_WITH_GDRIVE_FOLDER_ID
-backup_dir_list=/backup/gdrive-backups/backup-list.txt
-mysql_backup_list=/backup/gdrive-backups/mysql_backup_list.txt
+backup_dir_list=/gdrive-backups/backup-list.txt
+mysql_backup_list=/gdrive-backups/mysql_backup_list.txt
 backup_retention=14
 
 

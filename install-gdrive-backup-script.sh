@@ -16,7 +16,7 @@ dry_run_gdrive()
 /sbin/gdrive list
 }
 
-configure_sync_folder)()
+configure_sync_folder()
 {
 folder_id=`/sbin/gdrive mkdir `hostname`-backups | awk "{print $2}"`
 echo "Created Gdrive folder `hostname`-backups with ID $folder_id. The same would be used in backup script - /gdrive-backups/backup.sh"
